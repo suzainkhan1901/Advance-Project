@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Farming Agent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Soil Farming Agent</h1>
+    </header>
+    <main>
+        <section id="admin-login">
+            <h2>Admin Login</h2>
+            <form id="admin-login-form">
+                <input type="email" id="admin-email" placeholder="Email" required>
+                <input type="password" id="admin-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="user-registration">
+            <h2>User Registration</h2>
+            <form id="user-registration-form">
+                <input type="text" id="user-name" placeholder="Full Name" required>
+                <input type="email" id="user-email" placeholder="Email" required>
+                <input type="password" id="user-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section id="soil-details">
+            <h2>View Soil Details</h2>
+            <div id="soil-info"></div>
+        </section>
+        <section id="distributor-details">
+            <h2>View Distributor Details</h2>
+            <div id="distributor-info"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p> Suzain Khan</p>
+        <div class="copyright">Copyright &copy; 2024 All Rights Reserved by <br> <a href="https://t.me/shziiikhan" style="color: #0f4863;"> codewithsuzain<br></a></div>
+    </footer>
+
+    <script src="firebaseConfig.js"></script>
+    <script src="app.js"></script>
+    <script src="admin.js"></script>
+    <script src="user.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- /SoilFarmingAgent
+├── index.html: This is the main entry point of the application. It contains the HTML structure for the user interface, including sections for admin login, user registration, and viewing soil and distributor details. It links to external CSS for styling and JavaScript files for functionality.
+├── styles.css: This file contains all the CSS rules to style the application. It includes styles for layout, typography, colors, and responsive design to ensure the application looks good on various devices.
+├── app.js: This JavaScript file contains the main functionality of the application. It manages user interactions, handles form submissions for admin and user actions, connects to Firebase for data retrieval and storage, and implements logging for various actions performed by the user.
+├── firebaseConfig.js: This file contains the Firebase configuration details, including the API key, project ID, and database URL. It initializes the Firebase app and exports the necessary database references for use in the app.js file.
+├── admin.js: This JavaScript file is responsible for handling admin-specific functionalities, including admin login, posting soil details, and posting distributor details. It communicates with the Firebase database to save and retrieve admin data securely.
+├── user.js: This JavaScript file manages user-specific functionalities, including user registration, user login, and viewing soil and distributor details. It interacts with the Firebase database to fetch and display relevant information to the users.
+├── README.md: This file provides a comprehensive overview of the project, including the project title, technologies used, problem statement, system modules, and evaluation metrics. It includes detailed instructions for setting up the project, running the application, and understanding the workflow, along with links to Firebase documentation and coding standards.
+├── package.json: This file lists the project's dependencies, including Firebase and any other libraries used in the project. It includes scripts for starting the development server, running tests, and building the project for production.
+└── .gitignore: This file specifies files and directories that should be ignored by Git to prevent sensitive information from being committed, such as configuration files or local environment settings. -->
