@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    /* background-image: url(images.jpeg);  */
+    background-color: darkolivegreen;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+}
+
+footer{
+    margin: 250px;
+}
+img{
+    text-align: center;
+    width: 240px;
+    color: brown;
+}
