@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebus Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="firebaseConfig.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Ebus Management System</h1>
+
+    <div id="login-container">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register</a></p>
+    </div>
+
+    <div id="register-container" style="display: none;">
+        <h2>Register</h2>
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+    </div>
+
+    <div id="bus-info-container" style="display: none;">
+        <h2>Post Bus Information</h2>
+        <input type="text" id="busDetails" placeholder="Bus Details" required>
+        <input type="text" id="busType" placeholder="Bus Type" required>
+        <input type="text" id="contact" placeholder="Contact Details" required>
+        <button onclick="postBusInfo()">Post Bus Info</button>
+    </div>
+</body>
+</html>
