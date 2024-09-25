@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Government Aided Schemes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Farmer Government Aided Schemes</h1>
+    
+    <div id="admin-section" style="display:none;">
+        <h2>Admin Section</h2>
+        <button onclick="showPostCrop()">Post Crop Details</button>
+        <button onclick="showPostScheme()">Post Govt Schemes</button>
+        <button onclick="showApproveRequest()">Approve Farmer Scheme Request</button>
+    </div>
+
+    <div id="user-section" style="display:none;">
+        <h2>User Section</h2>
+        <button onclick="showRegister()">Register</button>
+        <button onclick="showLogin()">Login</button>
+        <button onclick="viewCropDetails()">View Crop Details</button>
+        <button onclick="viewGovtSchemes()">View Govt Schemes</button>
+        <button onclick="applyForScheme()">Apply for Govt Schemes</button>
+        <button onclick="viewStatus()">View Status</button>
+    </div>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
