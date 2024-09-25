@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Buddy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sports Buddy</h1>
+        <div id="user-auth">
+            <h2>User Registration</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="register-btn">Register</button>
+        </div>
+        <div id="sports-event">
+            <h2>Sports Events</h2>
+            <input type="text" id="event-name" placeholder="Event Name" required>
+            <button id="add-event-btn">Add Event</button>
+            <div id="event-list"></div>
+            
+        </div>
+    </div>
+</body>
+</html>
