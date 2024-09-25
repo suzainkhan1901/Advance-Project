@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Operation Scheduler</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Operation Scheduler for Hospital Management</h1>
+        <div id="userInterface">
+            <h2>User Module</h2>
+            <form id="registerForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <button id="viewDoctors">View Doctors</button>
+            <div id="doctorDetails"></div>
+        </div>
+        
+        <div id="adminInterface">
+            <h2>Admin Module</h2>
+            <form id="scheduleForm">
+                <input type="datetime-local" id="surgeryDateTime" required>
+                <input type="number" id="otId" placeholder="OT ID" required>
+                <input type="text" id="anesthesiaType" placeholder="Anesthesia Type" required>
+                <input type="text" id="anesthesiologist" placeholder="Anesthesiologist Name" required>
+                <input type="text" id="medic" placeholder="Medic" required>
+                <input type="text" id="nurses" placeholder="Nurses" required>
+                <textarea id="surgicalRemarks" placeholder="Remarks"></textarea>
+                <button type="submit">Post Schedule</button>
+            </form>
+            <div id="scheduleDetails"></div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+    <script src="firebaseConfig.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
