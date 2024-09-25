@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Secure & Share Govt Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Secure & Share Govt Document</h1>
+        <div id="user-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button id="register-btn">Register</button>
+        </div>
+        <div id="otp-form" style="display: none;">
+            <input type="text" id="otp" placeholder="Enter OTP" required>
+            <button id="verify-btn">Verify OTP</button>
+        </div>
+        <div id="document-upload" style="display: none;">
+            <input type="file" id="file-upload" required>
+            <button id="upload-btn">Upload Document</button>
+        </div>
+    </div>
+    <script src="firebase-config.js"></script>
+    <script src="aap.js"></script>
+</body>
+</html>
