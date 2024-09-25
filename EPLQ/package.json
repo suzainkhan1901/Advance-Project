@@ -1,0 +1,14 @@
+{
+  "name": "eplq",
+  "version": "1.0.0",
+  "description": "Efficient Privacy-Preserving Location-Based Query Encrypted Data",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server" 
+  },
+  "dependencies": {
+    "firebase": "^9.1.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
