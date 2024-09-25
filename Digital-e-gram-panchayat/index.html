@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital E Gram Panchayat</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Digital E Gram Panchayat</h1>
+    </header>
+    <main>
+        <section id="user-section">
+            <h2>User Registration/Login</h2>
+            <form id="user-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login/Register</button>
+            </form>
+        </section>
+        <section id="service-section">
+            <h2>Available Services</h2>
+            <div id="service-list"></div>
+        </section>
+    </main>
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

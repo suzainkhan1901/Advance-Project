@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #35424a;
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px;
+    background-color: #35424a;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#service-list {
+    margin-top: 20px;
+}
