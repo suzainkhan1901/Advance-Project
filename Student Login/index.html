@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student-Teacher Booking Appointment</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Appointment Booking System</h1>
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p id="login-message"></p>
+        </div>
+        <div id="appointment-section" style="display:none;">
+            <h2>Book Appointment</h2>
+            <input type="text" id="teacherName" placeholder="Teacher's Name" required>
+            <input type="text" id="appointmentPurpose" placeholder="Purpose" required>
+            <button onclick="bookAppointment()">Book Appointment</button>
+            <p id="appointment-message"></p>
+        </div>
+    </div>
+    <footer>
+        <p> Suzain Khan</p>
+        <div class="copyright">Copyright &copy; 2024 All Rights Reserved by <br> <a href="https://t.me/shziiikhan" style="color: #FF0000;"> codewithsuzain<br></a></div>
+    </footer>
+    <script src="firebaseConfig.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
