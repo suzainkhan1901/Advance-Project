@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #e794b0;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+h1,h2{
+    color: rgb(228, 87, 129);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+section {
+    padding: 20px;
+}
+
+
